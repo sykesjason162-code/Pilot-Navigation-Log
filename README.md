@@ -11,11 +11,29 @@ A comprehensive flight planning and performance suite designed for student pilot
 * **Preflight Checklist:** Integrated **IMSAFE** (Personal Minimums) and **ARROW** (Required Documents) checklists to ensure both the pilot and aircraft are airworthy and legal for the flight.
 * **Pilot Logbook:** A digital log to track flight hours (SEL/MEL, XC, Night, Instrument). Includes a **JavaScript/OnlyOffice Macro** to automatically archive "Current Flight" data into a permanent history log.
 
-## 🛠️ Setup & Configuration
+## 💻 Macro & Automation Setup
 
-1.  **Aircraft Data:** Open the `Weight & Balance` and `Performance` tabs. Enter your aircraft's specific data from the **Pilot Operating Handbook (POH)**, including V-speeds, fuel burn rates (GPH), and loading stations.
-2.  **Macros:** To use the automated logbook feature in OnlyOffice, copy the code from the `Macro Code` tab into the Macro Editor (View > Macros).
-3.  **Inputs:** Cells highlighted in **Blue** are for user input; **Green** cells contain automated calculations or linked data.
+The `LogFlight` macro automates the process of moving your "Current Flight" data (Row 4) into your permanent "Flight History" (Row 6+). 
+
+<img width="1901" height="877" alt="Screenshot 2026-05-15 020041" src="https://github.com/user-attachments/assets/855e4e91-ad4f-4a0b-8ef1-0501b2d2cb3d" />
+
+*A dedicated button is already created on the Pilot Log sheet for easy assignment.*
+
+### 🔵 OnlyOffice (Optimized)
+1. Open the **Macro Code** sheet in the workbook and copy the JavaScript code.
+2. Go to **View > Macros > New Macro**.
+3. Paste the code and click **Run**.
+4. **To Assign:** Right-click the "Log Flight" button shown above and select the macro you just created.
+
+### 🟢 Google Sheets
+1. Import the `.xlsx` file into Google Drive.
+2. Go to **Extensions > Apps Script**.
+3. Paste the Google Sheets compatible code found in the **Macro Code** sheet.
+4. **To Assign:** Right-click the button image, click the three dots (top right of the image), select **Assign script**, and type the name of the function (e.g., `logFlight`).
+
+### 🔴 Microsoft Excel
+* **Note:** You will need a version of Excel that supports premium automation features (Office Scripts for Web or VBA for Desktop).
+* Right-click the button to assign your specific VBA macro or Office Script.
 
 ## 📋 Flight Planning Workflow
 
