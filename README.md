@@ -1,39 +1,29 @@
 # Pilot Navigation Log & Flight Planner
 
-A professional-grade flight planning suite designed to streamline pre-flight calculations and in-flight navigation. Built for student pilots, flight simmers (MSFS/VATSIM), and general aviation enthusiasts who prefer a structured, "process-oriented" approach to flight planning.
+A comprehensive flight planning and performance suite designed for student pilots, flight simulation enthusiasts (MSFS/VATSIM), and general aviation pilots. This tool digitizes the traditional paper navigation log, providing automated calculations for cross-country planning, weight and balance, and regulatory compliance.
 
-## 🚀 Features
+## 🚀 Key Modules
 
-This workbook is divided into specialized modules to cover every aspect of a flight from planning to shutdown:
+* **Weight & Balance:** Automated CG envelope verification. Input your specific aircraft's empty weight and arms from your weight and balance records to ensure every flight is within gross weight and CG limits.
+* **Navigation Log:** A complete VFR/IFR planning sheet. Calculates Magnetic Heading (MH), Compass Heading (CH), and Ground Speed (GS) based on wind correction angles and magnetic variation.
+* **Fuel Management:** Built-in calculators for Trip, Taxi, and Alternate fuel. Includes automatic validation against **FAA Reserve Requirements (14 CFR 91.151 / 91.167)** for Day/Night VFR and IFR operations.
+* **Performance & Atmosphere:** Pressure and Density Altitude calculators to determine actual aircraft performance based on current METAR/ATIS data (OAT and Altimeter settings).
+* **Preflight Checklist:** Integrated **IMSAFE** (Personal Minimums) and **ARROW** (Required Documents) checklists to ensure both the pilot and aircraft are airworthy and legal for the flight.
+* **Pilot Logbook:** A digital log to track flight hours (SEL/MEL, XC, Night, Instrument). Includes a **JavaScript/OnlyOffice Macro** to automatically archive "Current Flight" data into a permanent history log.
 
-* **Navigation Log:** A detailed leg-by-leg planner including VOR frequencies, courses, altitudes, and time/fuel estimates.
-* **Weight & Balance:** Automated CG envelope calculator. Input your aircraft's specific arms and weights to ensure you are within limits.
-* **Performance & Atmospheric Calc:** Integrated Pressure/Density Altitude calculator and wind component (headwind/crosswind) tool.
-* **Fuel Requirements:** Detailed fuel planning including Trip, Taxi, Reserve (FAA Minimums), and Alternate fuel calculations.
-* **Preflight Checklist:** Digital implementation of IMSAFE and ARROW requirements to ensure pilot and aircraft readiness.
-* **Digital Pilot Log:** A dedicated sheet to track flight history, including a built-in macro for committing "Current Flight" data to long-term history.
+## 🛠️ Setup & Configuration
 
-## 🛠️ Getting Started
+1.  **Aircraft Data:** Open the `Weight & Balance` and `Performance` tabs. Enter your aircraft's specific data from the **Pilot Operating Handbook (POH)**, including V-speeds, fuel burn rates (GPH), and loading stations.
+2.  **Macros:** To use the automated logbook feature in OnlyOffice, copy the code from the `Macro Code` tab into the Macro Editor (View > Macros).
+3.  **Inputs:** Cells highlighted in **Blue** are for user input; **Green** cells contain automated calculations or linked data.
 
-### Prerequisites
-* **Microsoft Excel** or **OnlyOffice** (Recommended for Macro compatibility).
-* Your aircraft's **Pilot Operating Handbook (POH)** for V-speeds and performance data.
+## 📋 Flight Planning Workflow
 
-### Installation
-1.  Clone this repository or download the `.xlsx` file.
-2.  Open the file and navigate to the **Performance** tab to enter your aircraft's specific V-speeds (Vx, Vy, Va, etc.).
-3.  (Optional) For the Pilot Log automation, refer to the `Macro Code` tab to install the `LogFlight` script.
-
-## 📋 How to Use
-
-1.  **Weather & Flight Plan:** Start by pulling your METARs and winds aloft. Fill out the Weather & Flight Plan tab.
-2.  **Performance:** Enter the Field Elevation and Altimeter setting to calculate your Density Altitude. This will help you determine your ground roll and climb rates.
-3.  **Weight & Balance:** Update the blue cells with your actual payload (passengers, baggage, and fuel) to verify your CG is within the envelope.
-4.  **Navigation Log:** Plot your waypoints. The sheet will help you calculate your Magnetic Heading (MH) and Compass Heading (CH) based on wind correction.
-5.  **Log Your Flight:** Once the flight is complete, use the **Pilot Log** tab to record your time.
-
-## 📜 Macros
-The repository includes a `LogFlight` macro (located in the `Macro Code` tab) designed for OnlyOffice. This script automates the process of moving your completed flight data into your permanent flight history.
+1.  **Prep:** Complete the **IMSAFE** and **ARROW** checks in the `Preflight Checklist` tab.
+2.  **Weather:** Input current conditions into the `Weather & Flight Plan` sheet to calculate your **Density Altitude**.
+3.  **Loading:** Verify your payload in the `Weight & Balance` tab.
+4.  **Planning:** Map your waypoints in the `Navigation Log`. Use the `Fuel Required` tab to ensure you have sufficient "Fuel on Board" for your ETE plus required reserves.
+5.  **Log:** After shutdown, use the `Pilot Log` to record your time and maneuvers.
 
 ## ⚖️ Disclaimer
-*This tool is intended for flight simulation and educational purposes only. Always cross-check calculations with an official Pilot Operating Handbook (POH) and approved flight planning software before conducting real-world flight operations.*
+This tool is for educational and supplemental planning purposes. It is the responsibility of the Pilot in Command (PIC) to ensure the accuracy of all data and to refer to the approved Airplane Flight Manual (AFM) or Pilot Operating Handbook (POH) for all flight operations.
