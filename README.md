@@ -3,7 +3,8 @@
 A comprehensive flight planning and performance suite designed for student pilots, flight simulation enthusiasts (MSFS/VATSIM), and general aviation pilots. This tool digitizes the traditional paper navigation log, providing automated calculations for cross-country planning, weight and balance, and regulatory compliance.
 
 ## 🚀 Key Modules
-<img width="1375" height="733" alt="image" src="https://github.com/user-attachments/assets/682de84c-41fe-4f4c-9df6-712d03c953cb" />
+
+<img width="1459" height="660" alt="image" src="https://github.com/user-attachments/assets/4bc1f756-684f-4dc2-a07f-b3138c3a7ceb" />
 
 * **Weight & Balance:** Automated CG envelope verification. Input your specific aircraft's empty weight and arms from your weight and balance records to ensure every flight is within gross weight and CG limits.
 
